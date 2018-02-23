@@ -1,111 +1,12 @@
 <header>
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">MyCoupon V7</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <app-header></app-header>
+</header>
+<br>
+<br>
+<br>
+<br>
+<router-outlet></router-outlet>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Favorites<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Categories</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Stores</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-          data-toggle="dropdown" >My Coupons</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-               <a class="dropdown-item" href="#">Action</a>
-               <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </li>
-        
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search Coupon" aria-label="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-  </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <main>
-    <div class="container">
-      <h2 class="card-title">Top pics (need to be replaced with the slider)</h2>
-      <div class="row">
-        <div *ngFor="let is of [1,2,3,4,5]">
-        <div class="col"  >
-            <!--Card-->
-            <div class="card" 
-              style="width:180px;
-                margin-top: 15px;
-                box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)">
   
-              <!--Card image-->
-              <img class="img-fluid" style="height: 120px;" src="https://image.freepik.com/free-vector/abstract-discount-background_1057-4481.jpg" alt="Card image cap">
-  
-              <!--Card content-->
-              <div class="card-body">
-                  <!--Title-->
-                  <h6 class="card-title">Coupon Title</h6>
-                  <!--Text-->
-                  <p class="card-text">Details of coupon.</p>
-                  <i class="material-icons">add</i>
-                  <i class="material-icons">mood</i>
-                  <i class="material-icons">mood_bad</i>
-                  <i class="material-icons">share</i>
-              </div>
-  
-            </div>
-        </div>
-      </div>
-      </div>
-      
-    </div>
-    <br>
-    <br>
-    <div class="container">
-        <h2 class="card-title">Trending now</h2>
-        <div class="row">
-          <div *ngFor="let is of [1,2,3,4,5,6,7,8,9,10]">
-          <div class="col"  >
-              <!--Card-->
-              <div class="card" 
-                style="width:180px;
-                  margin-top: 15px;
-                  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)">
-    
-                <!--Card image-->
-                <img class="img-fluid" style="height: 120px;" src="https://image.freepik.com/free-vector/abstract-discount-background_1057-4481.jpg" alt="Card image cap">
-    
-                <!--Card content-->
-                <div class="card-body">
-                    <!--Title-->
-                    <h6 class="card-title">Coupon Title</h6>
-                    <!--Text-->
-                    <p class="card-text">Details of coupon.</p>
-                    <i class="material-icons">add</i>
-                    <i class="material-icons">mood</i>
-                    <i class="material-icons">mood_bad</i>
-                    <i class="material-icons">share</i>
-                </div>
-    
-              </div>
-          </div>
-        </div>
-        </div>
-        
-      </div>
-  </main>
   
   
