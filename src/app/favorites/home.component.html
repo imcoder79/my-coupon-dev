@@ -1,7 +1,8 @@
+<main>
   <div class="container">
-    <h2 class="card-title">Top pics(need to be replaced with the slider)</h2>
+    <h2 class="card-title">Top pics (need to be replaced with the slider)</h2>
     <div class="row">
-      <div *ngFor="let top of topPicks">
+      <div *ngFor="let favorite of favorites">
       <div class="col"  >
           <!--Card-->
           <div class="card" 
@@ -9,7 +10,7 @@
               margin-top: 15px;
               box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)">
 
-              <app-coupon [title]="top.title" [details]="top.details" [img]="top.img"></app-coupon> 
+              <app-coupon [title]="favorite.title" [details]="favorite.details" [img]="favorite.img"></app-coupon> 
 
           </div>
       </div>
@@ -38,3 +39,4 @@
       </div>
       
     </div>
+</main>
