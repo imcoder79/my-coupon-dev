@@ -8,6 +8,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { StoresComponent } from './stores/stores.component';
+import { CouponComponent } from './coupon/coupon.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { HeaderComponent } from './header/header.component';
     FavoritesComponent,
     CategoriesComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    StoresComponent,
+    CouponComponent
   ],
   imports: [
     BrowserModule,
