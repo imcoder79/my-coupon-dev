@@ -1,0 +1,8 @@
+div > i {
+    float : right;
+}
+
+i {
+    margin-right: 7px;
+    margin-top: 2px;
+}

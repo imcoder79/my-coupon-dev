@@ -11,6 +11,16 @@ export class CouponComponent implements OnInit {
   @Input() details;
   @Input() img;
 
+  displayResponseDiv = false;
+
+  mouseOver() {
+    this.displayResponseDiv = true;
+  }
+
+  mouseLeave() {
+    this.displayResponseDiv = false;
+  }
+
   constructor() { }
 
   ngOnInit() {
