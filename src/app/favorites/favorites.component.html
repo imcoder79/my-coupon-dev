@@ -1,32 +1,10 @@
 <div class="container">
   <h2 class="card-title">Favorites now</h2>
   <div class="row">
-    <div *ngFor="let is of [1,2,3,4,5,6,7,8,9,10]">
-    <div class="col"  >
-        <!--Card-->
-        <div class="card" 
-          style="width:180px;
-            margin-top: 15px;
-            box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)">
-
-          <!--Card image-->
-          <img class="img-fluid" style="height: 120px;" src="https://image.freepik.com/free-vector/abstract-discount-background_1057-4481.jpg" alt="Card image cap">
-
-          <!--Card content-->
-          <div class="card-body">
-              <!--Title-->
-              <h6 class="card-title">Coupon Title</h6>
-              <!--Text-->
-              <p class="card-text">Details of coupon.</p>
-              <i class="material-icons">add</i>
-              <i class="material-icons">mood</i>
-              <i class="material-icons">mood_bad</i>
-              <i class="material-icons">share</i>
-          </div>
-
-        </div>
+    <div *ngFor="let favorite of favorites">
+      <div class="col"  >
+        <app-coupon [title]="favorite.title" [details]="favorite.details" [img]="favorite.img"></app-coupon>
+      </div>
     </div>
   </div>
-  </div>
-  
-</div>
+</div>        

@@ -1,14 +1,35 @@
-<!--Card image-->
-<img class="img-fluid" style="height: 120px; width: 100%;" src="{{img}}" alt="Card image cap">
-
-<!--Card content-->
-<div class="card-body">
-    <!--Title-->
-    <h6 class="card-title">{{title}}</h6>
-    <!--Text-->
-    <p class="card-text">{{details}}</p>
-    <i class="material-icons">add</i>
-    <i class="material-icons">mood</i>
-    <i class="material-icons">mood_bad</i>
-    <i class="material-icons">share</i>
-</div>
+<div style="height: 170px;">
+    <!--Card-->
+    <div class="card" 
+        (mouseover)="mouseOver()"
+        (mouseleave)="mouseLeave()"
+        style="width:300px;
+        margin: 15px;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)">
+        <div class="row">
+            <div class="col">
+            <!--Card image-->
+                <img class="img-fluid" style="height: 100%; width: 100%;" src="{{img}}" alt="Card image cap">
+            </div>
+            <div class="col">
+                <div *ngIf="displayResponseDiv" class="row">
+                    <div class="col">
+                        <i class="material-icons">add</i>
+                        <i class="material-icons">mood</i>
+                        <i class="material-icons">mood_bad</i>
+                        <i class="material-icons">share</i>
+                    </div>
+                </div>
+                <div class="row col">
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h6 class="card-title">{{title}}</h6>
+                        <!--Text-->
+                        <p class="card-text">{{details}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
